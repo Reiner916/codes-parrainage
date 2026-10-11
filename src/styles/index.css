@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
+layer(base);
+
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 450px;
+  --breakpoint-sm: 575px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+
+  --color-current: currentColor;
+  --color-transparent: transparent;
+  --color-white: #ffffff;
+  /* Palette Revolut : monochrome.
+     Accent = noir en mode jour, basculé en blanc en mode nuit (voir .dark plus bas) */
+  --color-black: #000000;
+  --color-dark: #1d2430;
+  --color-primary: #000000;
+  --color-yellow: #fbb040;
+  --color-bg-color-dark: #000000;
+
+  --color-body-color: #788293;
+  --color-body-color-dark: #9b9ba3;
+
+  --color-stroke-stroke: #e3e8ef;
+  --color-stroke-dark: #353943;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+  --color-gray-dark: #0d0d10;
+  --color-gray-light: #f0f2f9;
+
+  --shadow-sign-up: 0px 5px 10px rgba(4, 10, 34, 0.2);
+  --shadow-one: 0px 2px 3px rgba(7, 7, 77, 0.05);
+  --shadow-two: 0px 5px 10px rgba(6, 8, 15, 0.1);
+  --shadow-three: 0px 5px 15px rgba(6, 8, 15, 0.05);
+  --shadow-sticky: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  --shadow-sticky-dark: inset 0 -1px 0 0 rgba(255, 255, 255, 0.1);
+  --shadow-feature-2: 0px 10px 40px rgba(48, 86, 211, 0.12);
+  --shadow-submit: 0px 5px 20px rgba(4, 10, 34, 0.1);
+  --shadow-submit-dark: 0px 5px 20px rgba(4, 10, 34, 0.1);
+  --shadow-btn: 0px 1px 2px rgba(4, 10, 34, 0.15);
+  --shadow-btn-hover: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-btn-light: 0px 1px 2px rgba(0, 0, 0, 0.1);
+
+  --drop-shadow-three: 0px 5px 15px rgba(6, 8, 15, 0.05);
+}
+
+/* Mode nuit : l'accent monochrome passe en blanc (boutons blancs, etc.) */
+.dark {
+  --color-primary: #ffffff;
+}
+
+/* Fond JOUR : gris très doux (Apple-like). Le fond aurora FIXE (.aurora-bg)
+   se dessine par-dessus, et c'est lui que le liquid glass refracte. */
+body {
+  background-color: #eef0f6;
+}
+
+/* Fond NUIT : noir profond. */
+.dark body {
+  background-color: #06060c;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   AURORA — fond coloré FIXE (position: fixed via la div). Le liquid glass
+   l'échantillonne en backdrop-filter : comme il est fixe à l'écran, le reflet
+   change tout seul au scroll (effet "vitre déplacée sur une feuille").
+   Statique → aucun coût de perf (vs l'ancien réseau animé).
+   ───────────────────────────────────────────────────────────── */
+.aurora-bg {
+  background-color: #eef0f6;
+  background-image:
+    radial-gradient(80% 60% at 20% 0%, rgba(99, 132, 255, 0.40), transparent 70%),
+    radial-gradient(75% 55% at 92% 14%, rgba(255, 128, 185, 0.32), transparent 70%),
+    radial-gradient(90% 65% at 60% 52%, rgba(86, 200, 255, 0.36), transparent 72%),
+    radial-gradient(82% 62% at 14% 100%, rgba(168, 138, 255, 0.38), transparent 72%);
+}
+.dark .aurora-bg {
+  background-color: #06060c;
+  background-image:
+    radial-gradient(80% 60% at 20% 0%, rgba(80, 110, 235, 0.55), transparent 70%),
+    radial-gradient(75% 55% at 92% 14%, rgba(208, 70, 150, 0.44), transparent 70%),
+    radial-gradient(90% 65% at 60% 52%, rgba(45, 160, 225, 0.42), transparent 72%),
+    radial-gradient(82% 62% at 14% 100%, rgba(128, 80, 230, 0.50), transparent 72%);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility sticky {
+  & .header-logo {
+    @apply py-5 lg:py-2;
+  }
+
+  & .menu-scroll.active {
+    @apply opacity-70;
+  }
+}
+
+@utility header-logo {
+  .sticky & {
+    @apply py-5 lg:py-2;
+  }
+}
+
+@utility menu-scroll {
+  .sticky &.active {
+    @apply opacity-70;
+  }
+}
+
+@utility active {
+  .sticky &.menu-scroll {
+    @apply opacity-70;
+  }
+}
+
+@utility dot {
+  input#togglePlan:checked ~ & {
+    @apply translate-x-full;
+  }
+}
+
+@utility box {
+  input#checkboxLabel:checked ~ & span {
+    @apply opacity-100;
+  }
+}
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  input[type="checkbox"]:checked ~ label span svg {
+    @apply inline-flex;
+  }
+}
+
+/* Carte "liquid glass" : translucide, saturée, reflet de bord — laisse passer
+   la couleur du fond (aurora) pour un vrai effet de verre. */
+@utility card-glass {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+}
+
+/* Barre de navigation translucide */
+@utility nav-glass {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+}

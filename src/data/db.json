@@ -1,0 +1,197 @@
+{
+  "categories": [
+    {
+      "slug": "banque",
+      "label": "Banque & Néobanque",
+      "description": "Les meilleures primes de bienvenue des banques en ligne et néobanques. Ouvre un compte avec un code de parrainage et touche ta prime.",
+      "icon": "🏦"
+    },
+    {
+      "slug": "crypto",
+      "label": "Crypto & Bourse",
+      "description": "Bonus d'inscription des plateformes crypto et de trading. Reçois des cryptos ou des actions offertes à l'ouverture de ton compte.",
+      "icon": "🪙"
+    }
+  ],
+  "offers": [
+    {
+      "slug": "revolut",
+      "name": "Revolut",
+      "category": "banque",
+      "tagline": "La néobanque la plus populaire",
+      "reward": "Jusqu'à 100€ offerts",
+      "code": "PARRAINREVOLUT",
+      "ctaUrl": "https://revolut.com",
+      "color": "#191c1f",
+      "logo": "/images/logos/revolut.png",
+      "popular": true,
+      "order": 1,
+      "verifiedAt": "Juin 2026",
+      "details": "Revolut est une néobanque proposant compte courant, carte gratuite, paiements à l'étranger sans frais et accès aux cryptos. En passant par un code de parrainage, tu reçois une prime après avoir activé ta carte et effectué les premiers paiements.",
+      "steps": [
+        "Clique sur le bouton et télécharge l'application Revolut",
+        "Saisis le code de parrainage à l'inscription",
+        "Commande ta carte et effectue les paiements demandés",
+        "Reçois ta prime sur ton compte"
+      ],
+      "conditions": [
+        "Nouveau client uniquement",
+        "Commande et activation d'une carte",
+        "Un nombre minimum de paiements sous 30 jours"
+      ]
+    },
+    {
+      "slug": "n26",
+      "name": "N26",
+      "category": "banque",
+      "tagline": "Banque mobile allemande",
+      "reward": "Prime de bienvenue",
+      "code": "PARRAINN26",
+      "ctaUrl": "https://n26.com",
+      "color": "#4e9d8d",
+      "logo": "/images/logos/n26.png",
+      "logoFill": true,
+      "popular": true,
+      "order": 3,
+      "verifiedAt": "Juin 2026",
+      "details": "N26 est une banque 100% mobile avec compte courant et carte Mastercard. Le parrainage te permet de toucher une prime en ouvrant un compte et en l'utilisant pour tes dépenses du quotidien.",
+      "steps": [
+        "Ouvre l'application N26 via le lien",
+        "Renseigne le code de parrainage",
+        "Finalise l'ouverture de ton compte (vérification d'identité)",
+        "Utilise ta carte pour valider l'offre"
+      ],
+      "conditions": [
+        "Première ouverture de compte N26",
+        "Vérification d'identité réussie",
+        "Dépenses minimum requises"
+      ]
+    },
+    {
+      "slug": "boursorama",
+      "name": "BoursoBank (Boursorama)",
+      "category": "banque",
+      "tagline": "La banque en ligne la moins chère",
+      "reward": "Jusqu'à 220€ offerts",
+      "code": "PARRAINBOURSO",
+      "ctaUrl": "https://boursobank.com",
+      "color": "#e6007e",
+      "logo": "/images/logos/boursorama.png",
+      "steps": [
+        "Accède à l'offre via le bouton",
+        "Indique le code parrain demandé",
+        "Ouvre ton compte et effectue le premier versement",
+        "Touche ta prime de bienvenue"
+      ],
+      "conditions": [
+        "Nouveau client BoursoBank",
+        "Ouverture d'un compte bancaire éligible",
+        "Premier versement / domiciliation selon l'offre"
+      ],
+      "details": "BoursoBank (ex-Boursorama Banque) est régulièrement élue banque la moins chère. La prime de parrainage est l'une des plus généreuses du marché à l'ouverture d'un compte bancaire avec premier versement.",
+      "verifiedAt": "Juin 2026",
+      "popular": true,
+      "order": 2
+    },
+    {
+      "slug": "sumeria",
+      "name": "Sumeria (ex-Lydia)",
+      "category": "banque",
+      "tagline": "Le compte tout-en-un de Lydia",
+      "reward": "20€ offerts",
+      "code": "PARRAINSUMERIA",
+      "ctaUrl": "https://sumeria.com",
+      "color": "#1a2b6b",
+      "verifiedAt": "Juin 2026",
+      "details": "Sumeria est le nouveau compte de paiement de Lydia, avec carte, paiements instantanés et épargne rémunérée. Le parrainage offre une prime après l'ouverture et les premières utilisations.",
+      "steps": [
+        "Télécharge l'app Sumeria via le lien",
+        "Entre le code de parrainage",
+        "Crée ton compte et commande ta carte",
+        "Réalise les actions demandées pour valider la prime"
+      ],
+      "conditions": [
+        "Nouveau compte Sumeria",
+        "Carte commandée et activée",
+        "Conditions d'utilisation minimales"
+      ]
+    },
+    {
+      "slug": "coinbase",
+      "name": "Coinbase",
+      "category": "crypto",
+      "tagline": "La plateforme crypto grand public",
+      "reward": "10€ en Bitcoin offerts",
+      "code": "PARRAINCOINBASE",
+      "ctaUrl": "https://coinbase.com",
+      "color": "#0052ff",
+      "logo": "/images/logos/coinbase.png",
+      "popular": true,
+      "order": 4,
+      "verifiedAt": "Juin 2026",
+      "details": "Coinbase est l'une des plateformes d'échange de cryptomonnaies les plus connues et régulées. Via le parrainage, tu reçois un bonus en crypto après ton premier achat.",
+      "steps": [
+        "Crée ton compte Coinbase via le lien",
+        "Vérifie ton identité",
+        "Effectue un premier achat de crypto",
+        "Reçois ton bonus en Bitcoin"
+      ],
+      "conditions": [
+        "Nouvel utilisateur Coinbase",
+        "Vérification d'identité (KYC)",
+        "Premier achat minimum requis"
+      ]
+    },
+    {
+      "slug": "trade-republic",
+      "name": "Trade Republic",
+      "category": "crypto",
+      "tagline": "Investir en bourse et crypto",
+      "reward": "1 action offerte (jusqu'à 200€)",
+      "code": "PARRAINTRADE",
+      "ctaUrl": "https://traderepublic.com",
+      "color": "#1a1a1a",
+      "logo": "/images/logos/trade-republic.png",
+      "popular": true,
+      "order": 5,
+      "verifiedAt": "Juin 2026",
+      "details": "Trade Republic permet d'investir en actions, ETF et cryptos avec des frais réduits, et propose un livret rémunéré. Le parrainage offre une action gratuite à l'ouverture du compte.",
+      "steps": [
+        "Ouvre ton compte Trade Republic via le lien",
+        "Renseigne le code de parrainage",
+        "Finalise l'inscription et le premier dépôt",
+        "Reçois ton action offerte"
+      ],
+      "conditions": [
+        "Nouveau compte Trade Republic",
+        "Vérification d'identité",
+        "Premier dépôt selon l'offre en cours"
+      ]
+    },
+    {
+      "slug": "bitpanda",
+      "name": "Bitpanda",
+      "category": "crypto",
+      "tagline": "Crypto, métaux & actions",
+      "reward": "Bonus de bienvenue",
+      "code": "PARRAINBITPANDA",
+      "ctaUrl": "https://bitpanda.com",
+      "color": "#0e4d44",
+      "logo": "/images/logos/bitpanda.png",
+      "logoFill": true,
+      "verifiedAt": "Juin 2026",
+      "details": "Bitpanda est une plateforme européenne pour investir en cryptos, métaux précieux et actions. Le parrainage débloque un bonus après ton premier dépôt et investissement.",
+      "steps": [
+        "Inscris-toi sur Bitpanda via le lien",
+        "Saisis le code de parrainage",
+        "Vérifie ton compte",
+        "Investis le montant minimum pour débloquer le bonus"
+      ],
+      "conditions": [
+        "Nouvel utilisateur Bitpanda",
+        "Vérification d'identité (KYC)",
+        "Investissement minimum requis"
+      ]
+    }
+  ]
+}
