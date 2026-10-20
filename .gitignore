@@ -30,3 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# cache de compilation TypeScript
+*.tsbuildinfo
