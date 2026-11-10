@@ -13,7 +13,7 @@
 > 🔎 Un site qui regroupe des **codes de parrainage vérifiés** pour les banques, néobanques et plateformes crypto (Revolut, BoursoBank, N26, Trade Republic…).
 > En quelques secondes, on trouve l'appli, on copie le code et on découvre la prime de bienvenue.
 
-Projet conçu et développé seul par **Amir Chouchane**, étudiant en BTS SIO.
+Projet conçu et développé seul par **Amir Chouchane**, étudiant en informatique.
 
 ![Page d'accueil en mode nuit](docs/screenshots/accueil-nuit.webp)
 
@@ -105,7 +105,7 @@ Distribué sous licence MIT (voir [LICENSE](LICENSE)).
 
 ## 📬 Contact
 
-**Amir Chouchane** · étudiant en BTS SIO, en recherche d'alternance
+**Amir Chouchane** · étudiant en informatique, en recherche d'alternance
 
 - 💼 LinkedIn : [amir-chouchane](https://www.linkedin.com/in/amir-chouchane)
 - 🐙 GitHub : [@Reiner916](https://github.com/Reiner916)
